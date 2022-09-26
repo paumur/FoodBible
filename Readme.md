@@ -22,3 +22,5 @@ Install the gulp command line utility.
 5. 
 Run the gulp command in your project directory:
    ```sh
+      gulp
+   ```
