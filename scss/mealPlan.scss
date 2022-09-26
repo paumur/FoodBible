@@ -1,0 +1,9 @@
+.meal-plan {
+  @include flex-col-center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.diet-plan__delete-btn {
+  margin-top: 1rem;
+}

@@ -1,0 +1,115 @@
+.recipe-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 2rem;
+
+  .card {
+    display: flex;
+    gap: 2rem;
+    background-color: white;
+    padding: 3rem;
+    .card__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      .card-label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+          border: none;
+          background: none;
+
+          i {
+            font-size: 1.3rem;
+          }
+        }
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        max-width: 300px;
+      }
+      .recipe-info {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 1rem;
+        .recipe-info__cuisine-type {
+          @include flex-center;
+          gap: 0.5rem;
+        }
+        .recipe-info__yield {
+          @include flex-center;
+          gap: 0.5rem;
+        }
+        .recipe-info__total-time {
+          @include flex-center;
+          gap: 0.5rem;
+        }
+      }
+    }
+    .card__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      h3 {
+        font-size: 1.2rem;
+        border-bottom: 1px solid black;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .nutrition-list {
+        @include flex-center;
+        justify-content: space-around;
+        align-items: flex-end;
+        margin-bottom: 2rem;
+        gap: 1rem;
+        p {
+          font-size: 0.8rem;
+        }
+        .nutrition-list__calories {
+          @include flex-col-center;
+          gap: 0.5rem;
+        }
+        .nutrition-list__daily-value {
+          @include flex-col-center;
+          gap: 0.5rem;
+        }
+        .nutrition-list__servings {
+          @include flex-col-center;
+          gap: 0.5rem;
+          input {
+            width: 2rem;
+            text-align: center;
+          }
+        }
+      }
+
+      .ingredients {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 450px;
+
+        ul {
+          max-width: 900px;
+          font-weight: 300;
+          li {
+            margin-bottom: 1rem;
+            list-style: disc;
+            list-style-position: inside;
+          }
+        }
+      }
+    }
+  }
+}

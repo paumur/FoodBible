@@ -1,0 +1,9 @@
+.diet-plan {
+  @include flex-col-center;
+  margin-top: 2rem;
+  gap: 1rem;
+  .diet-plan__description {
+    width: 200px;
+    font-weight: 300;
+  }
+}
